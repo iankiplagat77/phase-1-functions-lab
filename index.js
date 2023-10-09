@@ -13,16 +13,16 @@ function distanceTravelledInFeet(start,destination){
 }
 
 function calculatesFarePrice(start,destination){
-    let (destination-start) *264
+    let feet = (destination-start) *264
+    
+    if (feet<= 400) {
+        return "The first 400 metres are Free"
+    }else if (feet>400 && feet<= 2000){
+    return 'Your fare is ${feet*2} cents'  
+    }else if (feet>2500) {
+        return " Cannot travel that far."
+    } else{
+    //pass  
+    }
 }
 
-if (feet<= 400) {
-    return "The first 400 metres are Free"
-}else if (feet>400 && feet<= 2000){
-   return 'Your fare is ${feet*2} cents'  
-}else if (feet>2500) {
-    return " Cannot travel that far."
-}{
-  //pass  
-}
- 
